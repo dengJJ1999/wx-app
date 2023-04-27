@@ -1,0 +1,625 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+.placeholder {
+  font-size: 30rpx !important;
+  font-weight: 500 !important;
+}
+
+page {
+  font-size: 28rpx !important;
+  line-height: 1.4 !important;
+  letter-spacing: 1rpx;
+  color: #141414;
+  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  background: #F7F8FB;
+}
+
+page, cover-view, scroll-view, swiper, swiper-item, view, textarea, ul, li, p, img, input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  word-wrap: break-word;
+  word-break: break-all;
+  letter-spacing: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+}
+
+button:after {
+  display: none;
+}
+
+/*浮动|清除浮动*/
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*字体颜色*/
+.primary-color {
+  color: #F7AC30 !important;
+}
+
+/*文字行数*/
+.line-limit {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.line-limit-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/*按钮样式*/
+.btn-primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 610rpx;
+  height: 80rpx;
+  border-radius: 46rpx;
+  border: 1px solid none;
+  background: linear-gradient(136deg, #ffd597 0%, #cb9a51 100%);
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.btn-primary:active {
+  opacity: 0.8;
+}
+
+.btn-secondary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 610rpx;
+  height: 80rpx;
+  border-radius: 0.46rem;
+  border: 1px solid rgba(30, 30, 32, 0.2);
+  background: "#FFFFFF";
+  color: #454649;
+  font-size: 32rpx;
+}
+
+.btn-secondary:active {
+  opacity: 0.8;
+}
+
+.btn-disable {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 610rpx;
+  height: 98rpx;
+  border-radius: #999999;
+  border: 1px solid #999999;
+  background: 50rpx;
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.btn-disable:active {
+  opacity: 0.8;
+}
+
+/*输入框占位符颜色*/
+.placeholder-color {
+  color: #e5e5e5;
+}
+
+/*选择按钮*/
+.icon-select {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 44rpx;
+  max-width: 44rpx;
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: 100%;
+  background-size: 100% 100% !important;
+  margin-right: 20rpx;
+  background: #ffffff url("https://qiniu.mctower.runworld.com.cn/static-image/ic_round_unselected.png");
+}
+
+.icon-select.on {
+  background: #ffffff url("http://image.sch.dankal.cn/ic_selected.png");
+}
+
+/**
+* 页面公共
+*/
+.mr-4 {
+  margin-right: 4rpx;
+}
+
+.mr-5 {
+  margin-right: 5rpx;
+}
+
+.mr-8 {
+  margin-right: 8rpx;
+}
+
+.mr-10 {
+  margin-right: 10rpx;
+}
+
+.mr-11 {
+  margin-right: 11rpx;
+}
+
+.mr-12 {
+  margin-right: 12rpx;
+}
+
+.mr-14 {
+  margin-right: 14rpx;
+}
+
+.mr-16 {
+  margin-right: 16rpx;
+}
+
+.mr-18 {
+  margin-right: 18rpx;
+}
+
+.mr-20 {
+  margin-right: 20rpx;
+}
+
+.mr-24 {
+  margin-right: 24rpx;
+}
+
+.mr-30 {
+  margin-right: 30rpx;
+}
+
+.mr-36 {
+  margin-right: 36rpx;
+}
+
+.mr-70 {
+  margin-right: 70rpx;
+}
+
+.mt-10 {
+  margin-top: 10rpx;
+}
+
+.mt-24 {
+  margin-top: 24rpx;
+}
+
+.mb-2 {
+  margin-bottom: 2rpx;
+}
+
+.mb-6 {
+  margin-bottom: 6rpx;
+}
+
+.mb-10 {
+  margin-bottom: 10rpx;
+}
+
+.mb-12 {
+  margin-bottom: 12rpx;
+}
+
+.mb-14 {
+  margin-bottom: 14rpx;
+}
+
+.mb-16 {
+  margin-bottom: 16rpx;
+}
+
+.mb-18 {
+  margin-bottom: 18rpx;
+}
+
+.mb-20 {
+  margin-bottom: 20rpx;
+}
+
+.mb-24 {
+  margin-bottom: 24rpx;
+}
+
+.mb-30 {
+  margin-bottom: 30rpx;
+}
+
+.mb-38 {
+  margin-bottom: 38rpx;
+}
+
+.mb-48 {
+  margin-bottom: 48rpx;
+}
+
+.mb-128 {
+  margin-bottom: 128rpx;
+}
+
+.mt-8 {
+  margin-top: 8rpx;
+}
+
+.ml-18 {
+  margin-left: 18rpx;
+}
+
+.fr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fr-ac {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fr-jsb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fr-ac-jsb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fr-ac-jfe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.fr-ac-jc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fc-ac {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fc-jc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fc-ac-jc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.icon-14-10 {
+  width: 14rpx;
+  height: 10rpx;
+}
+
+.icon-16-12 {
+  width: 16rpx;
+  height: 12rpx;
+}
+
+.icon-16-30 {
+  width: 16rpx;
+  height: 30rpx;
+}
+
+.icon-26-26 {
+  width: 26rpx;
+  height: 26rpx;
+}
+
+.icon-20-20 {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.icon-22-22 {
+  width: 22rpx;
+  height: 22rpx;
+}
+
+.icon-28-28 {
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.icon-30-30 {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.icon-32-32 {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.icon-48-48 {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.icon-62-62 {
+  width: 62rpx;
+  height: 62rpx;
+}
+
+.icon-112-112 {
+  width: 112rpx;
+  height: 112rpx;
+}
+
+.tr-counter-90 {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.tr-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.tr-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.bg-fff {
+  background: #FFF;
+}
+
+.le-blueblock {
+  width: 4rpx;
+  height: 24rpx;
+  background: #488ded;
+}
+
+.fs28-488ded {
+  font-size: 28rpx;
+  color: #488ded;
+}
+
+.fs28-666 {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.fs28-999 {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.fs24-999 {
+  font-size: 28rpx;
+  color: #999;
+}
+
+.fs28-333 {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.fs32-600-333 {
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #333;
+}
+
+.red-star {
+  font-size: 28rpx;
+  font-weight: 600;
+  color: #d62222;
+}
+
+.c-999 {
+  color: #999;
+}
+
+.bottom-nav {
+  width: 100vw;
+  height: 0;
+  height: constant(safe-area-inset-bottom);
+  height: env(safe-area-inset-bottom);
+}
+
+.half-linebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 2rpx;
+  background: #fff;
+}
+
+.half-linebox .half-line {
+  width: 686rpx;
+  height: 2rpx;
+  background: #f7f8fb;
+}
+
+.line-f7f8fb {
+  width: 100vw;
+  height: 2rpx;
+  background: #f7f8fb;
+}
+
+.page-mask {
+  position: fixed;
+  z-index: 12;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(20, 20, 20, 0.3);
+}
+/*# sourceMappingURL=uni.css.map */

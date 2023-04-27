@@ -1,0 +1,49 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/reporting/mine-report",
+      "style": {
+        "navigationBarTitleText": "随机组队"
+      }
+    },
+    {
+      "path": "pages/reporting/submit",
+      "style": {
+        "navigationBarTitleText": "客户报备"
+      }
+    },
+    {
+      "path": "pages/reporting/checkselect",
+      "style": {
+        "navigationBarTitleText": "请选择"
+      }
+    },
+    {
+      "path": "pages/reporting/select",
+      "style": {
+        "navigationBarTitleText": "请选择"
+      }
+    },
+    {
+      "path": "pages/reporting/user-info",
+      "style": {
+        "navigationBarTitleText": "我的信息",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/test/test1",
+      "style": {
+        "navigationBarTitleText": "我的蓝牙",
+        "disableScroll": true
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarBackgroundColor": "#3F456F",
+    "backgroundColor": "#F7F8FB"
+  }
+}
